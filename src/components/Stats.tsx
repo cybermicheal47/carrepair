@@ -31,9 +31,9 @@ const stats = [
 const Stats = () => {
   const fadeRefs = [useFadeInOnScroll<HTMLDivElement>(), useFadeInOnScroll<HTMLDivElement>(), useFadeInOnScroll<HTMLDivElement>(), useFadeInOnScroll<HTMLDivElement>()];
   return (
-    <section className="py-16 bg-primary">
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="text-center mb-12">
+    <section className="py-8 bg-primary">
+      <div className="max-w-7xl mx-auto px-2">
+        <div className="text-center mb-6">
           <h2 className="text-4xl font-bold text-primary-foreground mb-4">
             Trusted by Lagos Drivers
           </h2>
@@ -42,7 +42,7 @@ const Stats = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {stats.map((stat, index) => {
             const IconComponent = stat.icon;
             return (

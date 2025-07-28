@@ -23,18 +23,18 @@ const WhyChooseUs = () => {
   const fadeRefs = [useFadeInOnScroll<HTMLDivElement>(), useFadeInOnScroll<HTMLDivElement>(), useFadeInOnScroll<HTMLDivElement>()];
   const testimonialRef = useFadeInOnScroll<HTMLDivElement>();
   return (
-    <section className="py-16 bg-background">
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <section className="py-8 bg-background">
+      <div className="max-w-7xl mx-auto px-2">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
           <div>
-            <h2 className="text-4xl font-bold text-foreground mb-6">
+            <h2 className="text-4xl font-bold text-foreground mb-4">
               Why Lagos Drivers Trust Acqua Care
             </h2>
-            <p className="text-lg text-muted-foreground mb-8">
+            <p className="text-lg text-muted-foreground mb-4">
               We've built our reputation on quality service, honest pricing, and putting our customers first. Here's what sets us apart from other auto repair shops in Lagos.
             </p>
             
-            <div className="space-y-6">
+            <div className="space-y-4">
               {features.map((feature, index) => {
                 const IconComponent = feature.icon;
                 return (
@@ -62,7 +62,7 @@ const WhyChooseUs = () => {
             </div>
           </div>
           
-          <div ref={testimonialRef} className="bg-muted rounded-lg p-8 fade-in tilt-hover">
+          <div ref={testimonialRef} className="bg-muted rounded-lg p-4 fade-in tilt-hover">
             <div className="text-center">
               <Award className="h-16 w-16 text-primary mx-auto mb-4" />
               <h3 className="text-2xl font-bold text-foreground mb-4">

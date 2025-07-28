@@ -35,16 +35,16 @@ const Services = () => {
   // Create refs for each card for fade-in
   const fadeRefs = [useFadeInOnScroll<HTMLDivElement>(), useFadeInOnScroll<HTMLDivElement>(), useFadeInOnScroll<HTMLDivElement>()];
   return (
-    <section id="services" className="py-16 bg-muted">
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="text-center mb-12">
+    <section id="services" className="py-8 bg-muted">
+      <div className="max-w-7xl mx-auto px-2">
+        <div className="text-center mb-6">
           <h2 className="text-4xl font-bold text-foreground mb-4">Our Core Services</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Professional automotive services designed to keep your vehicle running smoothly and safely.
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {services.map((service, index) => {
             const IconComponent = service.icon;
             return (

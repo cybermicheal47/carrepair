@@ -5,9 +5,9 @@ const BeforeAfter = () => {
   const imageRef = useFadeInOnScroll<HTMLDivElement>();
   const textRef = useFadeInOnScroll<HTMLDivElement>();
   return (
-    <section className="py-16 bg-background">
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <section className="py-8 bg-background">
+      <div className="max-w-7xl mx-auto px-2">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
           <div ref={imageRef} className="relative fade-in tilt-hover">
             <img
               src={beforeAfterImage}
@@ -23,17 +23,17 @@ const BeforeAfter = () => {
           </div>
           
           <div ref={textRef} className="fade-in">
-            <h2 className="text-4xl font-bold text-foreground mb-6">
+            <h2 className="text-4xl font-bold text-foreground mb-4">
               We Don't Just Repair — We Restore Your Peace of Mind
             </h2>
-            <p className="text-lg text-muted-foreground mb-6">
+            <p className="text-lg text-muted-foreground mb-2">
               Every vehicle that comes through our doors receives the same level of care and attention to detail. We take pride in transforming damaged, worn, or malfunctioning vehicles back to their optimal condition.
             </p>
-            <p className="text-lg text-muted-foreground mb-8">
+            <p className="text-lg text-muted-foreground mb-2">
               Our before and after gallery speaks for itself. From minor dents to major mechanical overhauls, we deliver results that exceed expectations every time.
             </p>
             
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-2 gap-3">
               <div className="text-center">
                 <div className="text-3xl font-bold text-primary mb-2">100%</div>
                 <div className="text-muted-foreground">Quality Guarantee</div>

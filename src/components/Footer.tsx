@@ -9,12 +9,12 @@ const Footer = () => {
   const fadeInRef = useFadeInOnScroll<HTMLElement>();
   return (
     <footer ref={fadeInRef} className="bg-secondary text-secondary-foreground fade-in">
-      <div className="max-w-7xl mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="max-w-7xl mx-auto px-2 py-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {/* Company Info */}
           <div>
             <h3 className="text-2xl font-bold text-primary mb-4">Acqua Care</h3>
-            <p className="text-secondary-foreground/80 mb-6 leading-relaxed">
+            <p className="text-secondary-foreground/80 mb-4 leading-relaxed">
               Your trusted partner for professional car repair and maintenance services in Lagos. 
               We combine quality workmanship with honest pricing to keep your vehicle running smoothly.
             </p>
@@ -34,8 +34,8 @@ const Footer = () => {
               </div>
             </div>
             
-            <div className="mt-6">
-              <h4 className="font-semibold mb-3">Quick Links</h4>
+            <div className="mt-4">
+              <h4 className="font-semibold mb-2">Quick Links</h4>
               <div className="grid grid-cols-2 gap-2">
                 <a href="#services" className="hover:text-primary transition-colors duration-200">Services</a>
                 <a href="#booking" className="hover:text-primary transition-colors duration-200">Book Now</a>
@@ -80,8 +80,8 @@ const Footer = () => {
               <Button variant="cta">Send Message</Button>
             </form>
             
-            <div className="mt-8">
-              <h4 className="font-semibold mb-4">Follow Us</h4>
+            <div className="mt-6">
+              <h4 className="font-semibold mb-4"></h4>
               <div className="flex gap-4">
                 <a href="#" className="p-2 bg-primary/10 rounded-lg hover:bg-primary hover:text-primary-foreground transition-colors duration-200">
                   <Facebook className="h-5 w-5" />
@@ -97,7 +97,7 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-secondary-foreground/20 mt-12 pt-8 text-center">
+        <div className="border-t border-secondary-foreground/20 mt-6 pt-4 text-center">
           <p className="text-secondary-foreground/60">
             © 2025 Acqua Care. All rights reserved. | Professional Car Repair Services in AI Halab
           </p>

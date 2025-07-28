@@ -1,7 +1,6 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+ 
+ 
   text-align: center;
 }
 
@@ -42,7 +41,7 @@
 }
 
 /* Glitch effect for hero heading */
-@keyframes glitch {
+/* @keyframes glitch {
   0% { text-shadow: 2px 0 red, -2px 0 blue; }
   20% { text-shadow: -2px 0 red, 2px 0 blue; }
   40% { text-shadow: 2px 2px red, -2px -2px blue; }
@@ -53,7 +52,7 @@
 .glitch {
   position: relative;
   animation: glitch 1.2s infinite linear alternate-reverse;
-}
+} */
 
 /* Fade-in on scroll */
 @keyframes fadeInUp {

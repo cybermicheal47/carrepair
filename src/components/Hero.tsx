@@ -14,7 +14,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center inertia-scroll">
+    <section id="home" className="relative flex items-center inertia-scroll" style={{ minHeight: '70vh' }}>
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImage})` }}
@@ -22,15 +22,15 @@ const Hero = () => {
         <div className="absolute inset-0 bg-secondary/80"></div>
       </div>
       
-      <div ref={fadeInRef} className="relative z-10 max-w-7xl mx-auto px-4 py-20 fade-in">
+      <div ref={fadeInRef} className="relative z-10 max-w-3xl mx-auto px-2 py-8 fade-in">
         <div className="max-w-2xl text-white">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight glitch">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight glitch">
             Need Fast, Reliable Car Repairs in <span className="text-accent">AI Halab?</span>
           </h1>
-          <p className="text-xl md:text-2xl mb-8 text-gray-200">
+          <p className="text-lg md:text-xl mb-4 text-gray-200">
             Acqua Care delivers expert auto services without the stress.
           </p>
-          <div className="flex flex-col md:flex-row gap-4">
+          <div className="flex flex-col md:flex-row gap-2">
             <Button variant="cta" size="lg" className="text-lg px-8 py-4">
               <Calendar className="mr-2 h-5 w-5" />
               Book an Appointment
